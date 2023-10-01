@@ -38,10 +38,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_DIAL).apply {
                 data = Uri.parse("tel:${binding.numberView.text}")
             }
-
-            if(intent.resolveActivity(packageManager) != null) {
+            if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
             }
+
         }
     }
 
